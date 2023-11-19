@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@700&family=Noto+Sans+KR&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400&family=Stylish&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, 'Stylish', serif;
+}
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #0a021c;
+    background: #fff;
+    font-family: 'Poppins', sans-serif, 'Stylish', serif;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.column {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.column .row {
+    padding: 0 15px;
+}
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexitem {
+    display: flex;
+    align-items: center;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #0a021c;
+}
+li {
+    color: #fff;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.flexitem {
+    display: flex;
+    align-items: center;
+}
+.icon-small, .icon-large {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    font-weight: normal;
+}
+.icon-small {
+    font-size: 20px;
+    margin: auto;
+}
+.icon-large {
+    font-size: 28px;
+    padding: 0 12px 0 0;
+}
+
+/* --Home Css-- */
+.header-main {
+    background: #453c5c;
+    padding: 24px 0;
+    margin-bottom: 32px;
+  }
+.dpt-cat {
+    position: relative;
+    z-index: 10;
+}
+.dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 12px 24px;
+    background: #a6c1ee;
+    border-radius: 7px 7px 0 0;
+    color: #fff;
+    margin-bottom: -38px;
+}
+.dpt-cat .dpt-head .mini-text {
+    color: #f2f3f5;
+}
+.dpt-cat .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+}
+.mini-text {
+    font-size: 11px;
+    color: #7c899a;
+}
+.header-main .right {
+    flex: 1;
+}
+form {
+    position: relative;
+}
+form.search input {
+    line-height: 52px;
+    padding: 0 112px 0 72px;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 300;
+}
+form.search :where(span,button) {
+    position: absolute;
+    top: 0;
+    padding: 9px 24px;
+    font-size: 16px;
+    color: #7c899a;
+    height: 100%;
+}
+form.search button {
+    right: 0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 600;
+    background: #a6c1ee;
+    color: #fff;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+form.search button:hover {
+    background: #0a021c;
+}
+
+.header-main .right {
+    max-width: 600px;
+    margin-left: auto;
+}
+.dpt-menu {
+    position: absolute;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #e5e8ec;
+    border-top: 0;
+    border-bottom: 0;
+}
+.dpt-menu > ul > li > a {
+    font-size: 13px;
+    height: 46px;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 24px;
+    border-bottom: 1px solid #e5e8ec;
+}
+a {
+    display: flex;
+    gap: 16px;
+}
+.icon-small {
+    margin-right: 0;
+}
+.dpt-menu .has-child > ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding: 24px;
+    font-size: 13px;
+    line-height: 40px;
+    border: 1px solid #e5e8ec;
+    border-top: 0;
+    display: none;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dpt-menu .has-child:hover ul {
+    display: block;
+}
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
+.dpt-menu .outer ul {
+    background: url(assets/suit.png);
+}
+.dpt-menu .top ul {
+    background-image: url(assets/top.png);
+}
+.dpt-menu .shirt ul {
+    background-image: url(assets/shirts.png);
+}
+.dpt-menu .pants ul {
+    background-image: url(assets/pants.png);
+}
+.dpt-menu .shoes ul {
+    background-image: url(assets/shoes.png);
+}
+.dpt-menu .acc ul {
+    background-image: url(assets/acc.png);
+}
+.dpt-menu .has-child li a {
+    font-weight: 600;
+}
+
+/* --Main-- */
+main {
+    /* width: auto; */
+    height: 700px;
+}
+
+.slider > div > .wrapper {
+    width: calc(100% - (300px + 32px));
+    margin-left: auto;
+}
+.slider .item {
+    position: relative;
+    width: 100%;
+    height: 474px;
+}
+.slider .text-content {
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+    padding: 0 0 0 10%;
+    z-index: 1;
+} 
+.slider .text-content h1,h3 {
+    color: #fff;
+}
+.primary-button {
+    border-radius: 20px;
+    height: 30px;
+    background: #a6c1ee;
+    color: #fff;
+    border: none;
+}
+.slider h4 {
+    font-size: 13px;
+    font-weight: 700;
+    width: fit-content;
+    padding: 4px 10px;
+    background: #fff;
+    color: #0a021c;
+    border-radius: 4px;
+}
+.slider h2{
+    color: #fff;
+}
+.text-content :where(h2,h3) span:first-child {
+    font-weight: 300;
+    color: #fff;
+} 
+
+/* --Responsive-- */
+
+/* @media screen and (min-width: 1110px) */
